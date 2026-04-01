@@ -1,8 +1,8 @@
 export default function ResourceNavigation() {
   return (
-    <div className="px-20 py-10">
+    <div className="px-20 py-10 tracking-wide">
       {/* Quick Access Heading */}
-      <p className="text-green-600 text-sm font-semibold tracking-wide">
+      <p className="text-green-600 text-sm font-semibold">
         RESOURCE NAVIGATION
       </p>
       <p className="font-bold text-3xl text-(--black)] mt-1">

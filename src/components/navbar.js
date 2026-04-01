@@ -1,7 +1,7 @@
 export default function Navbar() {
   return (
     <div
-      className="flex flex-row items-center justify-between px-20 py-3"
+      className="flex flex-row items-center justify-between px-20 py-3 tracking-wide"
       style={{ backgroundColor: "var(--primary-darkest)" }}
     >
       {/* Logo and Title */}

@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <div className="mt-15">
+    <div className="mt-15 tracking-wide">
       {/* Return to top */}
       <div className="flex justify-center py-2">
         <a href="#" className="text-primary underline text-sm text-center mb-4">

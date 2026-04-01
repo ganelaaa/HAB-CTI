@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <div className="px-20 py-4">
+    <div className="px-20 py-4 tracking-wide">
       <div
         className="relative text-white min-h-64 rounded-lg overflow-hidden"
         style={{

@@ -1,6 +1,6 @@
 export default function ProcessingPermits() {
   return (
-    <div className="px-20 py-10">
+    <div className="px-20 py-10 tracking-wide">
       {/* Agency Heading */}
       <p className="text-green-600 font-bold">PROCESSING PERMITS</p>
       <p className="font-bold text-2xl">Acts and Regulatory Agencies</p>
@@ -39,7 +39,7 @@ export default function ProcessingPermits() {
           </p>
           <p className="underline">Visit the FIFRA website</p>
           <svg
-            class="usa-icon bg-primary text-white"
+            className="usa-icon bg-primary text-white"
             aria-hidden="true"
             focusable="false"
             role="img"
