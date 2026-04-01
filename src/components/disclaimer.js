@@ -6,10 +6,20 @@ export default function Disclaimer() {
       <p className="font-bold text-2xl">Warning & Report</p>
 
       {/* Attention! */}
-      <div className="flex flex-row mt-7">
-        <div className="bg-accent-warm-lighter border-l-red-700 text-black py-3 px-3">
+      <div className="flex flex-row mt-7 h-80 w-full">
+        <div className="bg-[#f4e3db] text-black py-3 px-9 w-2xl">
           <div className="font-bold">
-            <div className="text-xl">Attention!</div>
+            <div className="text-xl">
+              <svg
+                className="usa-icon text-2xl"
+                aria-hidden="true"
+                focusable="false"
+                role="img"
+              >
+                <use href="/assets/img/sprite.svg#info"></use>
+              </svg>
+              Attention!
+            </div>
             <h3>Content last updated as of: March 04, 2025, Monday</h3>
           </div>
           <p className="mt-5">
@@ -30,12 +40,26 @@ export default function Disclaimer() {
         </div>
 
         {/* Report Errors */}
-        <div className="bg-primary-lighter py-3 px-3 ml-3">
+        <div className="bg-primary-lighter py-3 px-3 ml-3 border border-primary">
           <h1 className="font-bold">Report Errors</h1>
           <p>Found broken links, missing content, or errors?</p>
           <p className="mt-5">
             File a report below. We'll look into it and get it sorted.
           </p>
+          <button className="usa-button bg-blue-700 border">
+            File a Report
+            <svg
+              className="usa-icon"
+              aria-hidden="true"
+              focusable="false"
+              role="img"
+            >
+              <use href="/assets/img/sprite.svg#arrow_forward"></use>
+            </svg>
+          </button>
+          <button className="usa-button bg-white text-primary border">
+            View Status of a Report
+          </button>
         </div>
       </div>
     </div>

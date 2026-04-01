@@ -11,12 +11,41 @@ export default function ProcessingPermits() {
       </p>
 
       {/* Cards */}
-      <div className="flex flex-row mt-7">
-        <div className="bg-amber-200 border-l-red-700 text-black py-3 px-25">
-          <div className="font-bold">
-            <div className="text-xl">Attention!</div>
-            <h3>Content last updated as of: March 04, 2025, Monday</h3>
-          </div>
+      <div className="flex flex-row">
+        {/* FIFRA */}
+        <div className="border bg-primary-lighter px-25 py-20 mr-108">
+          <h1>Federal Insecticide, Fungicide, and Rodenticide Act (FIFRA)</h1>
+          <p>
+            Regulates the use, sale, distribution, and registration of
+            pesticides and algicides.
+          </p>
+          <p className="underline">Visit the FIFRA website</p>
+          <svg
+            class="usa-icon bg-primary text-white"
+            aria-hidden="true"
+            focusable="false"
+            role="img"
+          >
+            <use href="/assets/img/sprite.svg#arrow_forward"></use>
+          </svg>
+        </div>
+
+        {/* NPDES */}
+        <div className="border bg-primary-lighter px-25 py-20 mr-108">
+          <h1>Federal Insecticide, Fungicide, and Rodenticide Act (NPDES)</h1>
+          <p>
+            Regulates the use, sale, distribution, and registration of
+            pesticides and algicides.
+          </p>
+          <p className="underline">Visit the FIFRA website</p>
+          <svg
+            class="usa-icon bg-primary text-white"
+            aria-hidden="true"
+            focusable="false"
+            role="img"
+          >
+            <use href="/assets/img/sprite.svg#arrow_forward"></use>
+          </svg>
         </div>
       </div>
     </div>
