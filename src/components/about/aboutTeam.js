@@ -3,27 +3,31 @@ export default function AboutTeam() {
     <div className="tracking-wide px-20 py-20">
       {/* Team + Images */}
       <p className="font-bold text-3xl">The Team</p>
-      <div className="flex flex-row gap-5">
-        <div className="mt-10">
+      <div className="flex flex-row gap-5 mt-10">
+        <div>
+          <img src="/allen.jpg" className="w-80 h-80 object-contain" />
           <p className="font-bold text-xl">Allen R. Place</p>
           <p>Director, US HAB-CTI</p>
           <p>Professor, IMET -UMCES</p>
         </div>
 
-        <div className="mt-10">
+        <div>
+          <img src="/taylor.jpg" className="w-80 h-80 object-contain" />
           <p className="font-bold text-xl">Taylor Armstrong</p>
           <p>Program Manager, US HAB-CTI</p>
           <p>Professor, IMET -UMCES</p>
         </div>
 
-        <div className="mt-10">
+        <div>
+          <img src="/lizabeth.jpg" className="w-80 h-80 object-contain" />
           <p className="font-bold text-xl">Lizabeth Longstreet</p>
           <p>Research Laboratory</p>
           <p>Manager, US HAB-CTI,</p>
           <p>Mote Marine Laboratory</p>
         </div>
 
-        <div className="mt-10">
+        <div>
+          <img src="/kevin.jpg" className="w-80 h-80 object-contain" />
           <p className="font-bold text-xl">Kevin Claridge</p>
           <p>Operations Manager, US HAB-CTI</p>
           <p>VP, Sponsored Research,</p>
