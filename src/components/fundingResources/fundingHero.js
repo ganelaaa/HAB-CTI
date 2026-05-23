@@ -47,29 +47,12 @@ export default function FundingHero() {
         </div>
       </div>
 
-      <div className="border-primary-lighter border-b-6 mt-20 flex flex-row">
-        <div>
-          <p className="font-bold">On this page</p>
-          <p>US HABCTI Grant Information</p>
-          <p>2025 Notice of Funding and Review Process</p>
-          <p>Resources</p>
-          <p>Other Funding Opportunities</p>
-        </div>
-        <div>
-          <h1 className="text-primary-darker">US HAB-CTI Grant Information</h1>
-          <p className="mb-6 font-light">
-            One of the objectives of the US HAB-CTI is to fund extramural proof
-            of concept, innovative HAB control tools and technology projects to
-            assess their real-world feasibility. It is anticipated that US
-            HAB-CTI research will primarily be conducted in the scale of "Tier
-            1" (small scale lab testing) or "Tier 2" (tanks, mesocosms, and
-            raceways). Promising US HAB-CTI tools and technologies will be
-            encouraged to apply to relevant future NOAA Prevention Control and
-            Mitigation HAB competitive funding announcements or other
-            opportunities independent from the US HAB-CTI (shown as "Tier 3" and
-            "Tier 4" in image).
-          </p>
-        </div>
+      {/* WIP */}
+      <div className="text-center mb-8 mt-10">
+        <h1 className="text-3xl text-primary font-bold">
+          This page is currently under development...
+        </h1>
+        <p>Please check back soon!</p>
       </div>
     </div>
   );

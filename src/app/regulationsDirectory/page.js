@@ -21,11 +21,11 @@ export default function RegulationsDirectory() {
       </div>
 
       {/* WIP */}
-      <div className="text-center mb-8">
+      <div className="text-center mb-8 mt-10">
         <h1 className="text-3xl text-primary font-bold">
-          This page is still under construction....
+          This page is currently under development
         </h1>
-        <p>Please come back later :)</p>
+        <p>Please check back soon!</p>
       </div>
     </div>
   );

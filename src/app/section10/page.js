@@ -1,4 +1,4 @@
-export default function FieldStudies() {
+export default function Section10() {
   return (
     <div className="px-20 py-10 tracking-wide">
       {/* Breadcrumb */}
@@ -15,9 +15,9 @@ export default function FieldStudies() {
           Home
         </a>
         <span>›</span>
-        <span className="text-primary">Laws and Permits</span>
+        <span className="text-primary">Processing Permits</span>
         <span>›</span>
-        <span className="text-gray-800">Field Studies</span>
+        <span className="text-gray-800">Rivers and Harbors Act</span>
       </div>
 
       {/* WIP */}

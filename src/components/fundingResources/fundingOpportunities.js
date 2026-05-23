@@ -1,3 +1,3 @@
 export default function FundingOpportunities() {
-  return <div>something</div>;
+  return <div></div>;
 }

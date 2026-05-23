@@ -39,7 +39,7 @@ export default function ProcessingPermits() {
             href="/fifra"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm font-bold underline text-black mt-14 inline-block hover:text-primary transition-colors duration-200"
+            className="text-sm font-bold underline text-black mt-15 inline-block hover:text-primary transition-colors duration-200"
           >
             Visit the FIFRA Website
           </a>
@@ -68,7 +68,7 @@ export default function ProcessingPermits() {
             <p>exposed and consumed by humans.</p>
           </div>
           <a
-            href="https://www.fda.gov/regulatory-information/laws-enforced-fda/federal-food-drug-and-cosmetic-act-fdc-act"
+            href="/ffdca"
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm font-bold underline text-black mt-14 inline-block hover:text-primary transition-colors duration-200"
@@ -90,18 +90,19 @@ export default function ProcessingPermits() {
             </svg>
             Primary
           </div>
-          <p className="font-semibold text-xl">
-            Pesticide Registration Improvement Act{" "}
-          </p>
+          <p className="font-semibold text-xl">Pesticide Registration </p>
           <p className="font-semibold text-xl">Improvement Act (PRIA)</p>
           <div className="mt-3">
-            <p>Oops! We don't have information for this yet</p>
+            <p>
+              Establishes a fee-for-service system for pesticide registration at
+              the EPA.
+            </p>
           </div>
           <a
-            href="https://www.epa.gov/pria-fees"
+            href="/pria"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm font-bold underline text-black mt-14 inline-block hover:text-primary transition-colors duration-200"
+            className="text-sm font-bold underline text-black mt-23 inline-block hover:text-primary transition-colors duration-200"
           >
             Visit the PRIA Website
           </a>
@@ -115,13 +116,13 @@ export default function ProcessingPermits() {
           <img src="/FFDCA.png" className="w-20 h-20 mb-3 object-contain" />{" "}
           <p className="font-semibold text-xl">State Policies and Permits</p>
           <div className="mt-3">
-            <p>Oops! We don't have information for this yet</p>
+            <p>More information coming soon!</p>
           </div>
           <a
-            href="#"
+            href="/statePolicies"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm font-bold underline text-black mt-14 inline-block hover:text-primary transition-colors duration-200"
+            className="text-sm font-bold underline text-black mt-33 inline-block hover:text-primary transition-colors duration-200"
           >
             Visit the State Policies and Permitting Website
           </a>
@@ -138,7 +139,7 @@ export default function ProcessingPermits() {
             <p>States" unless they have an NPDES permit.</p>
           </div>
           <a
-            href="https://www.epa.gov/npdes"
+            href="/npdes"
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm font-bold underline text-black mt-11 inline-block hover:text-primary transition-colors duration-200"
@@ -156,7 +157,7 @@ export default function ProcessingPermits() {
             <p>fill material into waters of the United States.</p>
           </div>
           <a
-            href="https://www.epa.gov/laws-regulations/summary-clean-water-act"
+            href="/section404"
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm font-bold underline text-black mt-23 inline-block hover:text-primary transition-colors duration-200"
@@ -179,10 +180,10 @@ export default function ProcessingPermits() {
             <p>decisions.</p>
           </div>
           <a
-            href="https://www.epa.gov/nepa"
+            href="/nepa"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm font-bold underline text-black mt-19 inline-block hover:text-primary transition-colors duration-200"
+            className="text-sm font-bold underline text-black mt-25 inline-block hover:text-primary transition-colors duration-200"
           >
             Visit the NEPA Website
           </a>
@@ -202,7 +203,7 @@ export default function ProcessingPermits() {
             <p>to pesticides.</p>
           </div>
           <a
-            href="https://www.fws.gov/law/endangered-species-act"
+            href="/speciesAct"
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm font-bold underline text-black mt-10 inline-block hover:text-primary transition-colors duration-200"
@@ -220,7 +221,7 @@ export default function ProcessingPermits() {
             <p>sustainable supply of seafood.</p>
           </div>
           <a
-            href="https://www.fisheries.noaa.gov/resource/document/magnuson-stevens-fishery-conservation-and-management-act"
+            href="/magnusonAct"
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm font-bold underline text-black mt-32 inline-block hover:text-primary transition-colors duration-200"
@@ -234,7 +235,7 @@ export default function ProcessingPermits() {
       <div className="flex flex-row mt-5 gap-10">
         {/* MMPA */}
         <div className="px-6 py-6 border-gray-300 border-b border-t border-l border-r rounded w-full">
-          <img src="/castle.png" className="w-20 h-20 mb-3 object-contain" />{" "}
+          <img src="/NOAA.svg" className="w-20 h-20 mb-3 object-contain" />{" "}
           <p className="font-semibold text-xl">Marine Mammal Protection</p>
           <p className="font-semibold text-xl">Act (MMPA)</p>
           <div className="mt-3">
@@ -245,17 +246,17 @@ export default function ProcessingPermits() {
             <p>feeding, or sheltering (Level B harassment).</p>
           </div>
           <a
-            href="https://www.fisheries.noaa.gov/national/marine-mammal-protection/marine-mammal-protection-act"
+            href="/mmpa"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm font-bold underline text-black mt-10 inline-block hover:text-primary transition-colors duration-200"
+            className="text-sm font-bold underline text-black mt-16 inline-block hover:text-primary transition-colors duration-200"
           >
             Visit the MMPA Website
           </a>
         </div>
         {/* Section 10 */}
         <div className="px-6 py-6 border-gray-300 border-b border-t border-l border-r rounded w-full">
-          <img src="/castle.png" className="w-20 h-20 mb-3 object-contain" />{" "}
+          <img src="/USEPA.svg.png" className="w-20 h-20 mb-3 object-contain" />{" "}
           <p className="font-semibold text-xl">Section 10 of the Rivers and</p>
           <p className="font-semibold text-xl">Harbors Act</p>
           <div className="mt-3">
@@ -266,7 +267,7 @@ export default function ProcessingPermits() {
             <p>wetlands regulated by the Corps.</p>
           </div>
           <a
-            href="https://www.epa.gov/cwa-404/section-10-rivers-and-harbors-appropriation-act-1899"
+            href="/section10"
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm font-bold underline text-black mt-16 inline-block hover:text-primary transition-colors duration-200"
@@ -276,19 +277,20 @@ export default function ProcessingPermits() {
         </div>
         {/* MPRSA */}
         <div className="px-6 py-6 border-gray-300 border-b border-t border-l border-r rounded w-full">
-          <img src="/castle.png" className="w-20 h-20 mb-3 object-contain" />{" "}
+          <img src="/USEPA.svg.png" className="w-20 h-20 mb-3 object-contain" />{" "}
           <p className="font-semibold text-xl">Marine Protection,</p>
           <p className="font-semibold text-xl">
             Research and Sanctuaries Act (MPRSA)
           </p>
           <div className="mt-3">
-            <p>Information</p>
+            <p>Regulates the intentional transportation and disposal of</p>
+            <p>materials into ocean waters.</p>
           </div>
           <a
-            href="https://www.epa.gov/enforcement/marine-protection-research-and-sanctuaries-act-mprsa-and-federal-facilities"
+            href="/marineAct"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm font-bold underline text-black mt-16 inline-block hover:text-primary transition-colors duration-200"
+            className="text-sm font-bold underline text-black mt-32 inline-block hover:text-primary transition-colors duration-200"
           >
             Visit the MPRSA Website
           </a>
