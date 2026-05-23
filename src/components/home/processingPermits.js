@@ -130,6 +130,17 @@ export default function ProcessingPermits() {
         {/* NPDES */}
         <div className="relative px-6 py-6 border-gray-300 border-b border-t border-l border-r rounded w-full">
           <img src="/USEPA.svg.png" className="w-20 h-20 mb-3 object-contain" />{" "}
+          <div className="absolute top-15 right-10 bg-[#78a529] p-2 px-2  rounded-2xl text-white font-bold flex flex-row items-center gap-1 text-2xl">
+            <svg
+              className="usa-icon"
+              aria-hidden="true"
+              focusable="false"
+              role="img"
+            >
+              <use href="/assets/img/sprite.svg#star"></use>
+            </svg>
+            Primary
+          </div>
           <p className="font-semibold text-xl">Clean Water Act National</p>
           <p className="font-semibold text-xl">Pollutant Discharge</p>
           <p className="font-semibold text-xl">Elimination System (NPDES)</p>
