@@ -3,37 +3,47 @@ export default function FundingHero() {
     <div className="tracking-wide">
       {/* link to go back to home */}
       <div className="flex flex-row mt-5 ml-4 font-light">
-        <svg
-          className="usa-icon text-gray-500"
-          aria-hidden="true"
-          focusable="false"
-          role="img"
-        >
-          <use href="/assets/img/sprite.svg#arrow_back"></use>
-        </svg>
-        <a className="text-black ml-2 hover:text-primary text-sm" href="/">
-          Funding Resources
-        </a>
+        <div className="flex flex-row items-center hover:scale-105 transition-all duration-300 cursor-pointer w-fit">
+          <svg
+            className="usa-icon text-gray-500"
+            aria-hidden="true"
+            focusable="false"
+            role="img"
+          >
+            <use href="/assets/img/sprite.svg#arrow_back"></use>
+          </svg>
+          <a className="text-black ml-2 text-sm relative group" href="/">
+            Funding Resources
+            <span className="absolute left-0 -bottom-0.5 w-0 h-[1.5px] bg-black group-hover:w-full transition-all duration-700" />
+          </a>
+        </div>
       </div>
 
-      {/* funding hero image */}
-      <div className="relative mt-8">
-        <img src="/" className="w-full object-cover h-105" />
-        <div className="absolute inset-0 bg-black opacity-80 z-0" />
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center z-10">
+      {/* Background image */}
+      <div className="relative text-white mt-4 overflow-hidden h-85">
+        <div
+          className="absolute inset-0 bg-cover bg-center kenburns-loop"
+          style={{ backgroundImage: "url('/fundingHero.png')" }}
+        />
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black opacity-65 z-0" />
+        {/* Content */}
+        <div className="relative z-10 py-16 px-1 text-center mt-5">
           <svg
-            className="usa-icon text-3xl border border-t-2 border-b-2 border-r-2 border-l-2 rounded"
+            className="usa-icon text-5xl border p-1 rounded !mb-0"
             aria-hidden="true"
             focusable="false"
             role="img"
           >
             <use href="/assets/img/sprite.svg#attach_money"></use>
           </svg>
-          <h1 className="!text-6xl font-bold">Funding Opportunities</h1>
-          <p className="text-xl">
+          <h1 className="!text-6xl font-bold !mb-0 !mt-1">
+            Funding Opportunities
+          </h1>
+          <p className="text-lg !mt-3 text-gray-200">
             A repository of available grants and funding options
           </p>
-          <p className="text-xl">for your research.</p>
+          <p className="text-lg !mt-0 text-gray-200">for your research.</p>
         </div>
       </div>
 
@@ -59,78 +69,6 @@ export default function FundingHero() {
             opportunities independent from the US HAB-CTI (shown as "Tier 3" and
             "Tier 4" in image).
           </p>
-        </div>
-      </div>
-
-      {/* images */}
-      <div className="flex flex-row gap-50 justify-center mt-20">
-        <img src="/NOAA.svg" className="w-50 h-50 object-contain" />
-        <img src="/UMCES.png" className="w-50 h-50  object-contain" />
-        <img src="/MOTE.png" className="w-50 h-50  object-contain" />
-      </div>
-
-      {/* Tiers */}
-      <div className="px-5 py-10">
-        <h1 className="font-bold">US Harmful Algal Bloom - Control</h1>
-        <h1 className="font-bold">Technologies Incubator Clearinghouse</h1>
-
-        <div className="bg-primary-lighter px-3 py-10 flex flex-row gap-25">
-          <p>Incubator Funding</p>
-          <p>Other Funding</p>
-          <div className="bg-white">
-            <h1 className="font-bold">Tier 1</h1>
-            <p>Lab expiriments &</p>
-            <p>Literature Search</p>
-            <p>Img here</p>
-            <ul>
-              <li>Effects on the cells and Toxins in the Lab</li>
-              <li>Previous Uses Worldwide</li>
-              <li>Exisiting Regulatory</li>
-              <li>Approvals</li>
-            </ul>
-          </div>
-          <div className="bg-white">
-            <h1 className="font-bold">Tier 2</h1>
-            <p>Mesocosms,</p>
-            <p>Raceways,</p>
-            <p>Collaborations</p>
-            <p>Img here</p>
-            <ul>
-              <li>Effective with Natural Communities</li>
-              <li>Ecological Impacts</li>
-              <li>Human Health Concerns</li>
-              <li>Logistical Issues</li>
-              <li>Economically Feasible</li>
-            </ul>
-          </div>
-          <div className="bg-white">
-            <h1 className="font-bold">Tier 3</h1>
-            <p>Canals/Marinas,</p>
-            <p>Nearshore,</p>
-            <p>Offshore</p>
-            <p>Img here</p>
-            <ul>
-              <li>Pilot Studies</li>
-              <li>Field Demonstrations</li>
-              <li>Federal/State/Local</li>
-              <li>Regulatory Approvals</li>
-              <li>Public Interactions</li>
-            </ul>
-          </div>
-          <div className="bg-white">
-            <h1 className="font-bold">Tier 4</h1>
-            <p>Commercialize</p>
-            <p>Monitor</p>
-            <p>Img here</p>
-            <ul>
-              <li>Customers</li>
-              <li>Intellectual Property</li>
-              <li>Efficiency Scaling</li>
-              <li>State/Local Budgets</li>
-              <li>Deployment</li>
-              <li>Contractors</li>
-            </ul>
-          </div>
         </div>
       </div>
     </div>

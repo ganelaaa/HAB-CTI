@@ -42,19 +42,18 @@ input:not([disabled]):focus {
   animation: kenburns 5s ease-in-out forwards;
 }
 
-/* KENBURNS loop aboutHero */
+/* KENBURNS loop aboutHero & funding */
 @keyframes kenburns-loop {
   0% {
-    transform: scale(1);
+    transform: translateX(0%) translateY(0%) scale(1);
   }
   50% {
-    transform: scale(1.08);
+    transform: translateX(-2%) translateY(-3%) scale(1.05);
   }
   100% {
-    transform: scale(1);
+    transform: translateX(0%) translateY(0%) scale(1);
   }
 }
-
 .kenburns-loop {
-  animation: kenburns-loop 10s ease-in-out infinite;
+  animation: kenburns-loop 14s ease-in-out infinite;
 }

@@ -10,6 +10,7 @@ export default function Navbar() {
     { label: "Funding Resources", href: "/fundingResources" },
     { label: "HABs 101", href: "#" },
     { label: "FAQs", href: "#" },
+    { label: "Glossary", href: "#" },
   ];
   return (
     <div className="flex flex-row items-center justify-between px-20 py-3 tracking-wide shadow-sm border-b border-gray-200 rounded-b-lg">

@@ -37,8 +37,9 @@ export default function AboutTeam() {
         <div>
           <img src="/amy.png" className="w-80 h-80 object-contain" />
           <p className="font-bold text-xl">Amy Grogan</p>
-          <p>Director, HAB-CTI,</p>
-          <p>Faculty Research Assistant</p>
+          <p>Director of HAB-CTRL, US HAB-CTI,</p>
+          <p>Faculty Research Assistant,</p>
+          <p>IMET -UMCES</p>
         </div>
       </div>
 

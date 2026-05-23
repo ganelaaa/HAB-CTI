@@ -1,4 +1,4 @@
-export default function LiteratureSearch() {
+export default function ResearchRequirements() {
   return (
     <div className="px-20 py-10 tracking-wide">
       {/* Breadcrumb */}
@@ -15,9 +15,11 @@ export default function LiteratureSearch() {
           Home
         </a>
         <span>›</span>
-        <span className="text-primary">Literature</span>
+        <span className="text-primary">Laws and Permits</span>
         <span>›</span>
-        <span className="text-gray-800">Literature Search</span>
+        <span className="text-gray-800">
+          Research Requirements and Guidelines
+        </span>
       </div>
 
       {/* WIP */}

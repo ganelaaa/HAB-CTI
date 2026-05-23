@@ -21,7 +21,6 @@ export default function Hero() {
   return (
     <div className="px-20 py-4 tracking-wide">
       <div className="relative text-white min-h-64 rounded-lg overflow-hidden">
-        {/* ADDED - Render all slides, translate based on active index */}
         {slides.map((slide, index) => (
           <div
             key={index}

@@ -20,7 +20,7 @@ export default function ControlStrategies() {
         <div className="bg-[#ecf8dc] flex flex-row text-gray-500 font-bold gap-45 px-4 py-4">
           <p
             onClick={() => setActiveTab("chemical")}
-            className={`px-2 py-2 rounded transition-all duration-500 cursor-pointer flex items-center gap-1 ${activeTab === "chemical" ? "bg-[#538200] text-white" : "text-gray-500"}`}
+            className={`p-4 rounded transition-all duration-500 cursor-pointer flex items-center gap-1 w-60 ${activeTab === "chemical" ? "bg-[#538200] text-white" : "text-gray-500"}`}
           >
             <svg
               className="usa-icon"
@@ -34,7 +34,7 @@ export default function ControlStrategies() {
           </p>
           <p
             onClick={() => setActiveTab("biological")}
-            className={`px-2 py-2 rounded transition-all duration-500 cursor-pointer flex items-center gap-1 ${activeTab === "biological" ? "bg-[#538200] text-white" : "text-gray-500"}`}
+            className={`p-4 rounded transition-all duration-500 cursor-pointer flex items-center gap-1 ${activeTab === "biological" ? "bg-[#538200] text-white" : "text-gray-500"}`}
           >
             <svg
               className="usa-icon"

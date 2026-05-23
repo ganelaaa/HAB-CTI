@@ -59,9 +59,13 @@ export default function Footer() {
             <div className="flex flex-col gap-5">
               <div className="underline font-bold">Main Links</div>
               <ul className="list-none p-0 m-0 flex flex-col gap-3">
-                <li className="hover:underline cursor-pointer hover:text-primary-lighter">
+                <a
+                  className="hover:underline cursor-pointer hover:text-primary-lighter"
+                  href="#"
+                >
                   Home
-                </li>
+                </a>
+
                 <li className="hover:underline cursor-pointer hover:text-primary-lighter">
                   Guidance by Role
                 </li>
@@ -81,18 +85,30 @@ export default function Footer() {
             <div className="flex flex-col gap-5">
               <div className="underline font-bold">Researcher</div>
               <ul className="list-none p-0 m-0 flex flex-col gap-3">
-                <li className="hover:underline cursor-pointer hover:text-primary-lighter">
+                <a
+                  className="hover:underline cursor-pointer hover:text-primary-lighter"
+                  href="/literatureSearch"
+                >
                   Literature Search
-                </li>
-                <li className="hover:underline cursor-pointer hover:text-primary-lighter">
+                </a>
+                <a
+                  className="hover:underline cursor-pointer hover:text-primary-lighter"
+                  href="/regulationsDirectory"
+                >
                   Regulations Directory
-                </li>
-                <li className="hover:underline cursor-pointer hover:text-primary-lighter">
+                </a>
+                <a
+                  className="hover:underline cursor-pointer hover:text-primary-lighter"
+                  href="/researchRequirements"
+                >
                   Research Guidelines
-                </li>
-                <li className="hover:underline cursor-pointer hover:text-primary-lighter">
+                </a>
+                <a
+                  className="hover:underline cursor-pointer hover:text-primary-lighter"
+                  href="/fieldStudies"
+                >
                   Field Studies
-                </li>
+                </a>
               </ul>
             </div>
 
@@ -109,9 +125,12 @@ export default function Footer() {
                 <li className="hover:underline cursor-pointer hover:text-primary-lighter">
                   Timelines and Costs
                 </li>
-                <li className="hover:underline cursor-pointer hover:text-primary-lighter">
+                <a
+                  className="hover:underline cursor-pointer hover:text-primary-lighter"
+                  href="/gettingApproval"
+                >
                   Getting Approvals
-                </li>
+                </a>
                 <li className="hover:underline cursor-pointer hover:text-primary-lighter">
                   External Resources
                 </li>
@@ -158,7 +177,7 @@ export default function Footer() {
               </p>
               <div className="underline font-bold mt-2">Join Us</div>
               <div className="flex flex-row gap-3 mt-1 text-2xl">
-                <a href="#" className="text-white">
+                <a className="text-white">
                   <svg
                     className="usa-icon hover:text-red-500"
                     aria-hidden="true"
@@ -168,7 +187,7 @@ export default function Footer() {
                     <use href="/assets/img/sprite.svg#youtube"></use>
                   </svg>
                 </a>
-                <a href="#" className="text-white">
+                <a className="text-white">
                   <svg
                     className="usa-icon hover:text-blue-800"
                     aria-hidden="true"
@@ -178,7 +197,7 @@ export default function Footer() {
                     <use href="/assets/img/sprite.svg#facebook"></use>
                   </svg>
                 </a>
-                <a href="#" className="text-white">
+                <a className="text-white">
                   <svg
                     className="usa-icon hover:text-blue-300"
                     aria-hidden="true"
@@ -188,7 +207,7 @@ export default function Footer() {
                     <use href="/assets/img/sprite.svg#twitter"></use>
                   </svg>
                 </a>
-                <a href="#" className="text-white">
+                <a className="text-white">
                   <svg
                     className="usa-icon hover:text-pink-500"
                     aria-hidden="true"
@@ -198,7 +217,7 @@ export default function Footer() {
                     <use href="/assets/img/sprite.svg#instagram"></use>
                   </svg>
                 </a>
-                <a href="#" className="text-white">
+                <a className="text-white">
                   <svg
                     className="usa-icon hover:text-blue-600"
                     aria-hidden="true"
@@ -219,10 +238,10 @@ export default function Footer() {
           <div className="flex flex-row justify-between items-center text-sm font-bold">
             <p> © UMD HCIM'25 + US-HABCTI.2024-25. All rights reserved.</p>
             <div className="flex gap-12">
-              <a href="#" className="underline hover:text-primary-lighter">
+              <a className="underline hover:text-primary-lighter">
                 Legal Notice
               </a>
-              <a href="#" className="underline hover:text-primary-lighter">
+              <a className="underline hover:text-primary-lighter">
                 Privacy Policy
               </a>
             </div>
