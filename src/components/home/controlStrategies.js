@@ -1,118 +1,175 @@
 "use client";
 import { useState } from "react";
 
+const tabs = {
+  // Chemical Tab
+  chemical: {
+    label: "Chemical",
+    icon: "science",
+    subTabs: {
+      conventional: {
+        label: "Conventional Chemical",
+        image: "/lab.png",
+        title: "Conventional Chemical",
+        body: [
+          "Conventional pesticides are all active ingredients other than biological pesticides and antimicrobial pesticides. Conventional active ingredients are generally produced synthetically, i.e., are synthetic chemicals that prevent, mitigate, destroy, or repel any pest; or that act as a plant growth regulator, desiccant, defoliant or nitrogen stabilizer.",
+          "Wood preservative and anti-foulant products that do not have antimicrobial uses and agricultural fungicide and aquatic herbicide products are either classified as a conventional or a biochemical pesticide. Biochemical pesticides with a toxic mode of action are classified for the purposes of the registration process as conventional pesticides.",
+        ],
+      },
+      biochemical: {
+        label: "Biochemical Pesticides",
+        image: "/bio-pesticide.png",
+        title: "Biochemical Pesticides",
+        body: [
+          "Biochemical Pesticides are substances that: (1) are naturally occuring chemicals or are synthetically dervived equivalents; (2) have a history of exposure to humans and the environment demonstrating minimal toxicity, or in the case of a synthetically-derived biochemical pesticides, are equivalent to a naturally occuring chemical that have such a history; and (3) have a nontoxic mode of action to the target pest(s). Biochemical pesticides include substances, such as insect sex pheromones, which interfere with mating, as well as various scented plant extracts that attract insect pests to traps. Because it is sometimes difficult to determine whether a substance meets the criteria for classification as a biochemical pesticide, EPA has established the Biochemical Classification Committee to make such decisions.",
+        ],
+      },
+      antimicrobial: {
+        label: "Antimicrobial Pesticides",
+        image: "/anti-pesticide.png",
+        title: "Antimicrobial Pesticides",
+        body: [
+          "An antimicrobial pesticide is intended to disinfect, sanitize, reduce, or mitigate growth or development of microbiological organisms; or protect inanimate objects, industrial processes or systems, surfaces, water, or other chemical substances from contamination, fouling, or deterioration caused by bacteria, viruses, fungi, protozoa, algae, or slime; and in the intended use if exempt from, or otherwise not subject to, a tolerance or a food additive regulation.",
+          "Wood preservatives and anti-foulants are classified as antimicrobial pesticides if the products have antimicrobial claims. Other wood preservative, anti-foulant, agricultural fungicide, and aquatic herbicide products are either classified as conventionals or biopesticides.",
+        ],
+      },
+      minimum: {
+        label: "Minimum Risk Pesticides",
+        image: "/min-pesticide.png",
+        title: "Minimum Risk Pesticides",
+        body: [
+          "These are pesticides that meet a series of criteria determining them to pose little to no risk to human health or the environment. These pesticides are exempt from registration and label review under FIFRA.",
+          "If a product does not meet all of the exemption criteria, the product is not exempt from FIFRA regulation under 40 CFR 152.25(f), and sale or distribution of the product without registration may be a violation of FIFRA unless it is otherwise exempt from registration requirements.",
+        ],
+      },
+    },
+  },
+  // Biological Tab
+  biological: {
+    label: "Biological",
+    icon: "hourglass_empty",
+    subTabs: {
+      biotech: {
+        label: "Bio-Technology",
+        image: "/biotech.png",
+        title: "Bio-Technology",
+        body: [
+          "The science of modifying the genetic composition of plants, animals, and microorganisms.",
+          "This includes Plant-Incorporated Protectants (PIPs) and genetically modified microbial pesticides.",
+        ],
+      },
+      biomanipulation: {
+        label: "Bio-Manipulation",
+        image: "/manipulation.png",
+        title: "Bio-Manipulation",
+        body: [
+          "The strategy to reduce algal blooms and improve water clarity by manipulating the populations of organisms within the food web, particularly fish, shellfish, zooplankton, and aquatic plants.",
+        ],
+      },
+      microbial: {
+        label: "Microbial Pesticides",
+        image: "/microbial.png",
+        title: "Microbial Pesticides",
+        body: [
+          "Microbial pesticides consist of a microorganism (e.g., a bacterium, fungus, virus or protozoan) as the active ingredient.",
+          "Microbial pesticides can control many different kinds of pests, although each seperate active ingredient is relatively specific for its target pests.",
+        ],
+      },
+    },
+  },
+  // Physical Tab
+  physical: {
+    label: "Physical",
+    icon: "wash",
+    subTabs: {
+      devices: {
+        label: "Devices",
+        image: "/devices.png",
+        title: "Devices",
+        body: [
+          "an instrument or contrivance, generally working by physical means (e.g., electricity, light, or other mechanical or physical means) and not containing a substance or mixture of substances, that is intended to trap, destroy, repel, or mitigate a pest.",
+          "This definition excludes equipment used for applying pesticides when sold seperately from the pesticides themselves. 40 C.F.R. & 152.500(a).",
+        ],
+      },
+    },
+  },
+};
+
 export default function ControlStrategies() {
   const [activeTab, setActiveTab] = useState("chemical");
   const [activeSubTab, setActiveSubTab] = useState("conventional");
+
+  const handleTabClick = (tabKey) => {
+    setActiveTab(tabKey);
+    setActiveSubTab(Object.keys(tabs[tabKey].subTabs)[0]);
+  };
+
+  const currentSubTabs = tabs[activeTab].subTabs;
+  const currentContent =
+    currentSubTabs[activeSubTab] || Object.values(currentSubTabs)[0];
+
   return (
     <div className="px-20 py-10 tracking-wide">
-      {/* Strategies Headings */}
       <p className="text-green font-bold text-sm">CONTROL STRATEGIES</p>
-      <p className="font-bold text-3xl text-(--black)] mt-1">
+      <p className="font-bold text-3xl text-(--black) mt-1">
         Types of HAB Control Technologies
       </p>
-      <p className="text-sm text-(--gray)] mt-2 max-w-xl whitespace-nowrap">
+      <p className="text-sm text-(--gray) mt-2 max-w-xl whitespace-nowrap">
         Determining what type of product you have is key as each type has a
         different process for registration
       </p>
-      {/* Control Technology Tabs */}
+
+      {/* main tabs */}
       <div className="rounded-xl border-b border-l-2 border-t-2 border-r-2 border-gray-300 mt-5">
-        <div className="bg-[#ecf8dc] flex flex-row text-gray-500 font-bold gap-45 px-4 py-4">
-          <p
-            onClick={() => setActiveTab("chemical")}
-            className={`p-4 rounded transition-all duration-500 cursor-pointer flex items-center gap-1 w-60 ${activeTab === "chemical" ? "bg-[#538200] text-white" : "text-gray-500"}`}
-          >
-            <svg
-              className="usa-icon"
-              aria-hidden="true"
-              focusable="false"
-              role="img"
+        <div className="bg-[#ecf8dc] flex flex-row text-gray-500 font-bold px-4 py-4">
+          {Object.entries(tabs).map(([key, tab]) => (
+            <p
+              key={key}
+              onClick={() => handleTabClick(key)}
+              className={`p-4 rounded transition-all duration-400 cursor-pointer flex items-center justify-center gap-1 flex-1 ${activeTab === key ? "bg-[#4b710a] text-white" : "text-gray-500 hover:bg-[#bed79c]"}`}
             >
-              <use href="/assets/img/sprite.svg#science"></use>
-            </svg>
-            Chemical
-          </p>
-          <p
-            onClick={() => setActiveTab("biological")}
-            className={`p-4 rounded transition-all duration-500 cursor-pointer flex items-center gap-1 ${activeTab === "biological" ? "bg-[#538200] text-white" : "text-gray-500"}`}
-          >
-            <svg
-              className="usa-icon"
-              aria-hidden="true"
-              focusable="false"
-              role="img"
-            >
-              <use href="/assets/img/sprite.svg#hourglass_empty"></use>
-            </svg>
-            Biological
-          </p>
-          <p
-            onClick={() => setActiveTab("physical")}
-            className={`px-2 py-2 rounded transition-all duration-500 cursor-pointer flex items-center gap-1 ${activeTab === "physical" ? "bg-[#538200] text-white" : "text-gray-500"}`}
-          >
-            <svg
-              className="usa-icon"
-              aria-hidden="true"
-              focusable="false"
-              role="img"
-            >
-              <use href="/assets/img/sprite.svg#wash"></use>
-            </svg>
-            Physical
-          </p>
+              <svg
+                className="usa-icon"
+                aria-hidden="true"
+                focusable="false"
+                role="img"
+              >
+                <use href={`/assets/img/sprite.svg#${tab.icon}`}></use>
+              </svg>
+              {tab.label}
+            </p>
+          ))}
         </div>
-        <div className="bg-primary-lighter text-gray-500 font-bold gap-15 px-3 py-3 flex flex-row">
-          <p
-            onClick={() => setActiveSubTab("conventional")}
-            className={`rounded py-2 px-2 font-bold transition-all duration-500 cursor-pointer ${activeSubTab === "conventional" ? "bg-primary text-white" : "text-gray-500"}`}
-          >
-            Conventional Chemical
-          </p>
-          <p
-            onClick={() => setActiveSubTab("biochemical")}
-            className={`rounded py-2 px-2 transition-all duration-500 font-bold cursor-pointer ${activeSubTab === "biochemical" ? "bg-primary text-white" : "text-gray-500"}`}
-          >
-            Biochemical Pesticides
-          </p>
-          <p
-            onClick={() => setActiveSubTab("antimicrobial")}
-            className={`rounded py-2 px-2 transition-all duration-500 font-bold cursor-pointer ${activeSubTab === "antimicrobial" ? "bg-primary text-white" : "text-gray-500"}`}
-          >
-            Antimicrobial Pesticides
-          </p>
-          <p
-            onClick={() => setActiveSubTab("minimum")}
-            className={`rounded py-2 px-2 transition-all duration-500 font-bold cursor-pointer ${activeSubTab === "minimum" ? "bg-primary text-white" : "text-gray-500"}`}
-          >
-            Minimum Risk Pesticides
-          </p>
+
+        {/* sub tabs */}
+        <div className="bg-primary-lighter text-gray-500 font-bold px-3 py-3 flex flex-row">
+          {Object.entries(currentSubTabs).map(([key, subTab]) => (
+            <p
+              key={key}
+              onClick={() => setActiveSubTab(key)}
+              className={`rounded py-2 px-2 font-bold transition-all duration-400 cursor-pointer flex-1 text-center ${activeSubTab === key ? "bg-primary text-white" : "text-gray-500 hover:bg-[#bed6e8]"}`}
+            >
+              {subTab.label}
+            </p>
+          ))}
         </div>
-        {/* Information Block */}
-        <div className="rounded border-b border-l border-t border-r border-gray-300 bg-white text-black p-6 flex flex-row">
-          <div className="flex flex-row gap-6 items-start mb-6">
+
+        <div className="rounded border-b border-l border-t border-r border-gray-300 bg-white text-black p-6">
+          <div className="flex flex-row gap-6 items-stretch mb-6">
             <img
-              src="/lab.png"
+              src={currentContent.image}
               className="w-60 h-60 object-contain shrink-0 mt-6"
             />
-            <div>
-              <h1 className="font-bold">Conventional Chemical</h1>
-              <p className="font-light">
-                Conventional pesticides are all active ingredients other than
-                biological pesticides and antimicrobial pesticides. Conventional
-                active ingredients are geenrally produced synthetically, i.e.,
-                are synthetic chemicals athat prevent, mitigate, destroy, or
-                repel any pest; or that act as a plant growth regulator,
-                desiccant, defoliant or nitrogen stabilizer.
-              </p>
-              <p className="font-light mt-6">
-                Wood preservative and anti-foulant products that do not have
-                antimicrobial uses and agricultural fungicide and aquatic
-                herbicide products are either classified as a conventional or a
-                biochemical pesticide. biochemical pesticides eith a toxic mode
-                of action are classified for the purposes of the registration
-                process as conventional pesticides.
-              </p>
-              <button className="usa-button bg-blue-700 !mt-5">
+            <div className="flex flex-col justify-between min-h-52">
+              <div>
+                <h1 className="font-bold">{currentContent.title}</h1>
+                {currentContent.body.map((paragraph, i) => (
+                  <p key={i} className={`font-light ${i > 0 ? "mt-5" : ""}`}>
+                    {paragraph}
+                  </p>
+                ))}
+              </div>
+              <button className="usa-button bg-primary !mt-5 w-fit self-start">
                 Know More
                 <svg
                   className="usa-icon"

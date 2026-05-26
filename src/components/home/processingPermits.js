@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function ProcessingPermits() {
   return (
     <div className="px-20 py-10 tracking-wide">
@@ -37,8 +39,6 @@ export default function ProcessingPermits() {
           </div>
           <a
             href="/fifra"
-            target="_blank"
-            rel="noopener noreferrer"
             className="text-sm font-bold underline text-black mt-15 inline-block hover:text-primary transition-colors duration-200"
           >
             Visit the FIFRA Website
@@ -69,8 +69,6 @@ export default function ProcessingPermits() {
           </div>
           <a
             href="/ffdca"
-            target="_blank"
-            rel="noopener noreferrer"
             className="text-sm font-bold underline text-black mt-14 inline-block hover:text-primary transition-colors duration-200"
           >
             Visit the FFDCA Website
@@ -100,8 +98,6 @@ export default function ProcessingPermits() {
           </div>
           <a
             href="/pria"
-            target="_blank"
-            rel="noopener noreferrer"
             className="text-sm font-bold underline text-black mt-23 inline-block hover:text-primary transition-colors duration-200"
           >
             Visit the PRIA Website
@@ -120,9 +116,7 @@ export default function ProcessingPermits() {
           </div>
           <a
             href="/statePolicies"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-sm font-bold underline text-black mt-33 inline-block hover:text-primary transition-colors duration-200"
+            className="text-sm font-bold underline text-black mt-35 inline-block hover:text-primary transition-colors duration-200"
           >
             Visit the State Policies and Permitting Website
           </a>
@@ -151,9 +145,7 @@ export default function ProcessingPermits() {
           </div>
           <a
             href="/npdes"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-sm font-bold underline text-black mt-11 inline-block hover:text-primary transition-colors duration-200"
+            className="text-sm font-bold underline text-black mt-12 inline-block hover:text-primary transition-colors duration-200"
           >
             Visit the NPDES Website
           </a>
@@ -169,8 +161,6 @@ export default function ProcessingPermits() {
           </div>
           <a
             href="/section404"
-            target="_blank"
-            rel="noopener noreferrer"
             className="text-sm font-bold underline text-black mt-23 inline-block hover:text-primary transition-colors duration-200"
           >
             Visit the Clean Water Act Website
@@ -192,8 +182,6 @@ export default function ProcessingPermits() {
           </div>
           <a
             href="/nepa"
-            target="_blank"
-            rel="noopener noreferrer"
             className="text-sm font-bold underline text-black mt-25 inline-block hover:text-primary transition-colors duration-200"
           >
             Visit the NEPA Website
@@ -215,8 +203,6 @@ export default function ProcessingPermits() {
           </div>
           <a
             href="/speciesAct"
-            target="_blank"
-            rel="noopener noreferrer"
             className="text-sm font-bold underline text-black mt-10 inline-block hover:text-primary transition-colors duration-200"
           >
             Visit the Endangered Species Act Website
@@ -233,8 +219,6 @@ export default function ProcessingPermits() {
           </div>
           <a
             href="/magnusonAct"
-            target="_blank"
-            rel="noopener noreferrer"
             className="text-sm font-bold underline text-black mt-32 inline-block hover:text-primary transition-colors duration-200"
           >
             Visit the Magnuson-Stevens Act Website
@@ -258,9 +242,7 @@ export default function ProcessingPermits() {
           </div>
           <a
             href="/mmpa"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-sm font-bold underline text-black mt-16 inline-block hover:text-primary transition-colors duration-200"
+            className="text-sm font-bold underline text-black mt-19 inline-block hover:text-primary transition-colors duration-200"
           >
             Visit the MMPA Website
           </a>
@@ -279,9 +261,7 @@ export default function ProcessingPermits() {
           </div>
           <a
             href="/section10"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-sm font-bold underline text-black mt-16 inline-block hover:text-primary transition-colors duration-200"
+            className="text-sm font-bold underline text-black mt-19 inline-block hover:text-primary transition-colors duration-200"
           >
             Visit the Rivers and Harbors Act Website
           </a>
@@ -299,8 +279,6 @@ export default function ProcessingPermits() {
           </div>
           <a
             href="/marineAct"
-            target="_blank"
-            rel="noopener noreferrer"
             className="text-sm font-bold underline text-black mt-32 inline-block hover:text-primary transition-colors duration-200"
           >
             Visit the MPRSA Website

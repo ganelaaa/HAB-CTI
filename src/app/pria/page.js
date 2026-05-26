@@ -1,4 +1,4 @@
-export default function Pria() {
+export default function Fifra() {
   return (
     <div className="px-20 py-10 tracking-wide">
       {/* Breadcrumb */}
@@ -17,7 +17,9 @@ export default function Pria() {
         <span>›</span>
         <span className="text-primary">Processing Permits</span>
         <span>›</span>
-        <span className="text-gray-800">PRIA</span>
+        <span className="text-primary">FIFRA</span>
+        <span>›</span>
+        <span className="text-gray-800">Pesticide Registration</span>
       </div>
 
       {/* WIP */}
@@ -26,6 +28,22 @@ export default function Pria() {
           This page is currently under development
         </h1>
         <p>Please check back soon!</p>
+      </div>
+
+      {/* background image */}
+      <div className="relative text-white mt-4 h-60">
+        <div className="absolute inset-0 bg-cover bg-center" />
+        <div className="absolute inset-0 bg-black opacity-65 z-0" />
+        {/* Content */}
+        <div className="relative z-10 py-16 px-1 text-center mt-5">
+          <h1 className="!text-4xl font-bold !mb-0 !mt-1">
+            Pesticide Registration
+          </h1>
+
+          <p className="text-lg !mt-3 text-gray-200">
+            FIFRA pesticide product registration
+          </p>
+        </div>
       </div>
     </div>
   );

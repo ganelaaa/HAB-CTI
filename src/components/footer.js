@@ -116,24 +116,33 @@ export default function Footer() {
             <div className="flex flex-col gap-5">
               <div className="underline font-bold">Tech Developer</div>
               <ul className="list-none p-0 m-0 flex flex-col gap-3">
-                <li className="hover:underline cursor-pointer hover:text-primary-lighter">
+                <a
+                  className="hover:underline cursor-pointer hover:text-primary-lighter"
+                  href="/patentSearch"
+                >
                   Patent Check
-                </li>
-                <li className="hover:underline cursor-pointer hover:text-primary-lighter">
+                </a>
+                <a
+                  className="hover:underline cursor-pointer hover:text-primary-lighter"
+                  href="/consultantsDatabase"
+                >
                   Consultants Database
-                </li>
-                <li className="hover:underline cursor-pointer hover:text-primary-lighter">
+                </a>
+                <a className="hover:underline cursor-pointer hover:text-primary-lighter">
                   Timelines and Costs
-                </li>
+                </a>
                 <a
                   className="hover:underline cursor-pointer hover:text-primary-lighter"
                   href="/gettingApproval"
                 >
                   Getting Approvals
                 </a>
-                <li className="hover:underline cursor-pointer hover:text-primary-lighter">
+                <a
+                  className="hover:underline cursor-pointer hover:text-primary-lighter"
+                  href="/externalResources"
+                >
                   External Resources
-                </li>
+                </a>
               </ul>
             </div>
 
@@ -141,9 +150,12 @@ export default function Footer() {
             <div className="flex flex-col gap-5">
               <div className="underline font-bold">Manager</div>
               <ul className="list-none p-0 m-0 flex flex-col gap-3">
-                <li className="hover:underline cursor-pointer hover:text-primary-lighter">
+                <a
+                  className="hover:underline cursor-pointer hover:text-primary-lighter"
+                  href="/registeredProducts"
+                >
                   Registered Products
-                </li>
+                </a>
                 <li className="hover:underline cursor-pointer hover:text-primary-lighter">
                   Existing Literature
                 </li>

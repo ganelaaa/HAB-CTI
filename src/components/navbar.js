@@ -15,7 +15,10 @@ export default function Navbar() {
   return (
     <div className="flex flex-row items-center justify-between px-20 py-3 tracking-wide shadow-sm border-b border-gray-200 rounded-b-lg">
       {/* Logo and Title */}
-      <div className="flex flex-row items-center gap-3">
+      <Link
+        href="/"
+        className="flex flex-row items-center gap-3 group transition-all duration-300 hover:opacity-80 hover:scale-[1.02]"
+      >
         <img
           src="/logo.png"
           alt="US HAB-CTI Logo"
@@ -28,7 +31,7 @@ export default function Navbar() {
             <p className="italic text-xs">& Regulatory Logistics</p>
           </div>
         </div>
-      </div>
+      </Link>
 
       {/* Nav Links */}
       <nav className="flex flex-row gap-10 text-gray-600">

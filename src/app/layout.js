@@ -1,6 +1,7 @@
 import "./globals.css";
 import Navbar from "@/components/navbar.js";
 import Footer from "@/components/footer.js";
+import ScrollToTop from "@/components/scrollToTop.js";
 
 export const metadata = {
   title: "US HAB-CTI",
@@ -14,6 +15,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/logo.png" type="image/png" />
       </head>
       <body>
+        <ScrollToTop />
         <Navbar />
         {children}
         <Footer />
